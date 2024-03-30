@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Web Design Quiz</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        h1, h2 {
+            color: #007bff;
+        }
+
+        p {
+            margin-bottom: 20px;
+        }
+
+        input[type="radio"] {
+            margin-bottom: 10px;
+        }
+
+        button {
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            cursor: pointer;
+        }
+
+        ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+        nav {
+            background-color: #f4f4f4;
+            padding: 10px 20px;
+            text-align: center;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #333;
+            padding: 0 20px;
+        }
+
+        nav a:hover {
+            color: #007bff;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="Aboutme.html">About Me</a>
+        <a href="Article.html">Article</a>
+        <a href="Quiz.html">Quiz</a>
+    </nav>
+    <h1>Responsive Web Design Quiz</h1>
+    <form id="quizForm">
+        <h2>Question 1:</h2>
+        <p>What is the primary goal of responsive web design?</p>
+        <input type="radio" name="q1" value="a">A. To create visually appealing websites<br>
+        <input type="radio" name="q1" value="b">B. To ensure websites adapt to different devices and screen sizes<br>
+        <input type="radio" name="q1" value="c">C. To increase website loading speed<br>
+
+        <h2>Question 2:</h2>
+        <p>Which CSS technique is commonly used for implementing responsive web design?</p>
+        <input type="radio" name="q2" value="a">A. Inline CSS<br>
+        <input type="radio" name="q2" value="b">B. External CSS<br>
+        <input type="radio" name="q2" value="c">C. Media queries<br>
+
+        <h2>Question 3:</h2>
+        <p>What does a media query allow you to do in CSS?</p>
+        <input type="radio" name="q3" value="a">A. Specify the background color of a website<br>
+        <input type="radio" name="q3" value="b">B. Apply styles based on the device characteristics such as screen size and orientation<br>
+        <input type="radio" name="q3" value="c">C. Create animations on a webpage<br>
+
+        <h2>Question 4:</h2>
+        <p>Why is responsive web design important for SEO?</p>
+        <input type="radio" name="q4" value="a">A. It improves website security<br>
+        <input type="radio" name="q4" value="b">B. It helps websites rank higher in search engine results for mobile devices<br>
+        <input type="radio" name="q4" value="c">C. It makes websites load faster<br>
+
+        <h2>Question 5:</h2>
+        <p>Which HTML tag is used to define the viewport for responsive web design?</p>
+        <input type="radio" name="q5" value="a">A. &lt;meta&gt;<br>
+        <input type="radio" name="q5" value="b">B. &lt;viewport&gt;<br>
+        <input type="radio" name="q5" value="c">C. &lt;responsive&gt;<br>
+
+        <h2>Question 6:</h2>
+        <p>Which of the following is NOT a key component of responsive web design?</p>
+        <input type="radio" name="q6" value="a">A. Flexible Grid Layouts<br>
+        <input type="radio" name="q6" value="b">B. Adaptive Images<br>
+        <input type="radio" name="q6" value="c">C. Fixed Font Sizes<br>
+
+        <h2>Question 7:</h2>
+        <p>What is the purpose of a breakpoint in responsive web design?</p>
+        <input type="radio" name="q7" value="a">A. To break the layout of a website<br>
+        <input type="radio" name="q7" value="b">B. To define when a website's layout should change based on the device width<br>
+        <input type="radio" name="q7" value="c">C. To increase the loading speed of a website<br>
+
+        <h2>Question 8:</h2>
+        <p>Which CSS property is commonly used to make images fluid in responsive web design?</p>
+        <input type="radio" name="q8" value="a">A. width: auto;<br>
+        <input type="radio" name="q8" value="b">B. height: auto;<br>
+        <input type="radio" name="q8" value="c">C. max-width: 100%;<br>
+
+        <h2>Question 9:</h2>
+        <p>What is the purpose of a viewport meta tag in HTML?</p>
+        <input type="radio" name="q9" value="a">A. To specify the width and scale of a website's viewport<br>
+        <input type="radio" name="q9" value="b">B. To define the background color of a website<br>
+        <input type="radio" name="q9" value="c">C. To create animations on a webpage<br>
+
+        <h2>Question 10:</h2>
+        <p>Which HTML element is used to create a navigation bar in a responsive website?</p>
+        <input type="radio" name="q10" value="a">&lt;nav&gt;<br>
+        <input type="radio" name="q10" value="b">&lt;navbar&gt;<br>
+        <input type="radio" name="q10" value="c">&lt;menu&gt;<br>
+
+        <h2>Question 11:</h2>
+        <p>What is the purpose of CSS media queries?</p>
+        <input type="radio" name="q11" value="a">A. To change the color of text on a website<br>
+        <input type="radio" name="q11" value="b">B. To apply different styles based on device characteristics like screen size<br>
+        <input type="radio" name="q11" value="c">C. To add animations to a webpage<br>
+
+        <button type="button" onclick="submitQuiz()">Submit Quiz</button>
+    </form>
+
+    <div id="quizResults" style="display: none;">
+        <h1>Quiz Results</h1>
+        <div id="score"></div>
+        <h2>Correct Answers:</h2>
+        <ul id="answers"></ul>
+    </div>
+
+    <script src="Quiz.js"></script>
+</body>
+</html>
